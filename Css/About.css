@@ -73,6 +73,7 @@ body {
   font-size: 18px;
   letter-spacing: 0.5px;
   padding: 0 10px;
+  
 }
 
 .menu a:after {
@@ -220,14 +221,6 @@ a:hover:after {
   transition: 0.5s;
 }
 
-.contentt button:hover span{ 
-  width: 100%;
-}
-/*When hovering over the button it shows a sliding effect */
-
-.contentt button:hover{ 
-  border: none;
-}
 
 /* Styling for buttons within the Hover_Buttn class */
 .Hover_Buttn .button {
