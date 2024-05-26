@@ -3,14 +3,14 @@ By: Wayeth Ken C. Cabanlit
 
 Theme Chosen: Portfolio
 
-Programming Languages
-HTML5
-CSS3
-JavaScript
+Programming Languages:
+HTML5,
+CSS3,
+JavaScript,
 
-Library & Plug-ins
-GSAP Scrolltrigger
-Lenis
-Jquery
-FontAwesome
-Google Fonts
+Library & Plug-ins:
+GSAP Scrolltrigger,
+Lenis,
+Jquery,
+FontAwesome,
+Google Fonts,
