@@ -1,181 +1,178 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
-*{
-    padding: 0;
-    margin: 0;
 
-   
+/* Global reset */
+* {
+  padding: 0;
+  margin: 0;
 }
 
+/* Custom font for 'w' */
 @font-face {
-    font-family: w;
-    src: url(./fonts/WanoQuin-ExtraBold.otf);
+  font-family: w;
+  src: url(./fonts/WanoQuin-ExtraBold.otf);
 }
 
-
-html,body{
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
-    width: 100%;
-    overscroll-behavior: none;
-    min-height: 100%;   
+/* Global styling for html and body */
+html,
+body {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  overscroll-behavior: none;
+  min-height: 100%;
 }
 
-h1 { 
-    font-size: 14rem; 
-    font-family: 'Bebas Neue';
-    position: fixed;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    margin: 0;
-    color: #FCCF00;
-    text-shadow: 10px 0px 0px #141414;
+/* Styling for h1 */
+h1 {
+  font-size: 14rem;
+  font-family: 'Bebas Neue';
+  position: fixed;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: 0;
+  color: #fccf00;
+  text-shadow: 10px 0px 0px #141414;
 }
 
+/* Styling for icons within navbar */
 i {
-    margin-right: 10px;
-}
-.btn{
-    font-weight: 500;
-    text-transform: uppercase;
+  margin-right: 10px;
 }
 
-.wrapper{
-    display: flex;
+/* Styling for buttons */
+.btn {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
 }
 
-section{ 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 100vh;
-    margin: 0 auto;
+/* Styling for wrapper */
+.wrapper {
+  display: flex;
 }
 
+/* Styling for sections */
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* Styling for .gallery */
 .gallery {
-    height: 200vh;
+  height: 200vh;
 }
 
+/* Styling for images */
 .img {
-    height: 300%;
-    width: 100%;
-    position: relative;
-    background-size: cover;
-    z-index: -1;
-
-    &:nth-of-type(1) {background-image: url('Gallery_Images/IMG_4788.PNG');}
-    &:nth-of-type(2) {background-image: url('Gallery_Images/IMG_4789.PNG');}
-    &:nth-of-type(3) {background-image: url('Gallery_Images/IMG_4790.PNG');}
-    &:nth-of-type(4) {background-image: url('Gallery_Images/IMG_4791.PNG');}
-    &:nth-of-type(5) {background-image: url('Gallery_Images/IMG_4792.PNG');}
-    &:nth-of-type(6) {background-image: url('Gallery_Images/IMG_4793.PNG');}        
-    &:nth-of-type(7) {background-image: url('Gallery_Images/IMG_4803.PNG');}        
-    &:nth-of-type(8) {background-image: url('Gallery_Images/IMG_4806.PNG');}        
-    &:nth-of-type(9) {background-image: url('Gallery_Images/IMG_4796.PNG');}        
-
-
-    &:before {
-        content: '';
-        position: absolute;
-        height: 100vh;
-        width: 100%;
-        z-index: 4;
-        top: 0;
-        left: 0;
-        border-right: 1px solid black;
-    }
+  height: 300%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  z-index: -1;
 }
 
-.line{   
-    border-right: 1px solid black;
+/* Background images for .img with nth-of-type */
+.img:nth-of-type(1) { background-image: url('Gallery_Images/IMG_4788.PNG'); }
+.img:nth-of-type(2) { background-image: url('Gallery_Images/IMG_4789.PNG'); }
+.img:nth-of-type(3) { background-image: url('Gallery_Images/IMG_4790.PNG'); }
+.img:nth-of-type(4) { background-image: url('Gallery_Images/IMG_4791.PNG'); }
+.img:nth-of-type(5) { background-image: url('Gallery_Images/IMG_4792.PNG'); }
+.img:nth-of-type(6) { background-image: url('Gallery_Images/IMG_4793.PNG'); }
+.img:nth-of-type(7) { background-image: url('Gallery_Images/IMG_4803.PNG'); }
+.img:nth-of-type(8) { background-image: url('Gallery_Images/IMG_4806.PNG'); }
+.img:nth-of-type(9) { background-image: url('Gallery_Images/IMG_4796.PNG'); }
+
+/* Styling for .line */
+.line {
+  border-right: 1px solid black;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 3rem;
-    position: fixed;
-    top: 0;
-    width: 93vw;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    z-index: 1000;
+/* Styling for .navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 3rem;
+  position: fixed;
+  top: 0;
+  width: 93vw;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  z-index: 1000;
 }
 
-.navbar span{
-    position: absolute;
-    bottom: 0;
-    height: 5px;
-    width: 50px;
-    background: linear-gradient(90deg , transparent , #141414);
-    animation: animate 5s infinite linear;
+/* Styling for .navbar span */
+.navbar span {
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  width: 50px;
+  background: linear-gradient(90deg, transparent, #141414);
+  animation: animate 5s infinite linear;
 }
 
-
+/* Keyframes for .navbar span animation */
 @keyframes animate {
-    0%{
-        left: 0;
-        transform: translate(-100%);
-    }
-    100%{
-        left: 100%;
-        transform: translate(0%);
-    }
+  0% {
+    left: 0;
+    transform: translate(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translate(0%);
+  }
 }
 
-.logo a{
-    text-transform: capitalize;
-    font-size: 30px;
-    cursor: pointer;      
-    font-family: w;
-    text-decoration: none;
-    color: #000;
+/* Styling for .logo a */
+.logo a {
+  text-transform: capitalize;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: w;
+  text-decoration: none;
+  color: #000;
 }
 
-li{
-    list-style: none;
-    font-weight: 400;
-    font-size: 16px;
+/* Styling for menu items */
+.menu,
+.menu li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-
-.menu{
-    display: flex;
-    gap: 5rem;
-    text-transform: uppercase;
-    font-weight: 100;
-}
-
-.menu li{
-    list-style: none;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.menu a{
+.menu a {
   position: relative;
   text-decoration: none;
-  font-family: 'Lato',sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #000;
   font-size: 18px;
   letter-spacing: 0.5px;
   padding: 0 10px;
 }
 
-.menu a:after{
+/* Styling for menu items hover effect */
+.menu a:after {
   content: "";
   position: absolute;
-  background-color:  #FCCF00;
+  background-color: #fccf00;
   height: 3px;
   width: 0;
   left: 0;
   bottom: -10px;
   transition: 0.3s;
 }
-.menu a:hover{
-  color:  #000;
+
+/* Styling for menu items hover effect */
+.menu a:hover {
+  color: #000;
 }
+
 a:hover:after{
   width: 100%;
 }
