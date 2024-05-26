@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="harrnish" />
+    <title>WKC Portfolio</title>
+    <link rel="stylesheet" href="Css/Showcase.css"/>
+    <script src="https://kit.fontawesome.com/504050c3f7.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- TweenMax - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar"> <!-- Navigation bar -->
+          <span></span> <!-- Placeholder span (can be used for styling or spacing) -->
+          <div class="logo"><a href="Index.html">WKC</a></div> <!-- Logo with a link to the index page -->
+          <ul class="menu"> <!-- Menu list -->
+              <li><a href="Index.html"><i class="fa-solid fa-house"></i>Home</a></li> <!-- Home link with an icon -->
+              <li><a href="About Page.html"><i class="fa-solid fa-user"></i>About</a></li> <!-- About link with an icon -->
+              <li><a href="Gallery.html"><i class="fa-solid fa-camera-retro"></i>Gallery</a></li> <!-- Gallery link with an icon -->
+              <li><a href="Showcase.html"><i class="fa-solid fa-code"></i>Web Development</a></li> <!-- Web Development link with an icon -->
+              <li><a href="Contact page.html"><i class="fa-solid fa-phone"></i>Contact</a></li> <!-- Contact link with an icon -->
+          </ul>
+          <div class="btn"></div> <!-- Button placeholder (can be used for additional navigation or actions) -->
+      </nav>
+  </header>
+    
+    
+  <div class="navigation-wrapper"> <!-- Wrapper for the navigation section -->
+    <div class="project-preview-wrapper"> <!-- Wrapper for project previews -->
+        <div class="project-preview"></div> <!-- Project preview area -->
+    </div>
+    <ul class="navigation-list"> <!-- Navigation list -->
+        <h1>EXERCISES</h1> <!-- Header for the navigation list -->
+        <li class="Hover_Text">
+            <a class="navigation-link navigation-link-1" href="#">
+                <span data-text="RECIPE">RECIPE <i class="fa-solid fa-bowl-food"></i></span> <!-- Link with RECIPE text and icon -->
+            </a>
+        </li>
+        <div class="project-overlay"></div> <!-- Overlay for project preview (can be used for styling) -->
+        <li class="Hover_Text">
+            <a class="navigation-link navigation-link-2" href="#">
+                <span data-text="RESOURCE">RESOURCE <i class="fa-solid fa-book"></i></span> <!-- Link with RESOURCE text and icon -->
+            </a>
+        </li>
+        <li class="Hover_Text">
+            <a class="navigation-link navigation-link-3" href="#">
+                <span data-text="PLANNER">PLANNER <i class="fa-solid fa-calendar"></i></span> <!-- Link with PLANNER text and icon -->
+            </a>
+        </li>
+        <li class="Hover_Text">
+            <a class="navigation-link navigation-link-4" href="#">
+                <span data-text="VIDEO">VIDEO <i class="fa-solid fa-video"></i></span> <!-- Link with VIDEO text and icon -->
+            </a>
+        </li>
+        <li class="Hover_Text">
+            <a class="navigation-link navigation-link-5" href="#">
+                <span data-text="PETROL">PETROL <i class="fa-solid fa-gas-pump"></i></span> <!-- Link with PETROL text and icon -->
+            </a>
+        </li>
+        <li class="Hover_Text">
+            <a class="navigation-link navigation-link-6" href="#">
+                <span data-text="AUDIO">AUDIO <i class="fa-solid fa-file-audio"></i></span> <!-- Link with AUDIO text and icon -->
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="Image_Slider"></div> <!-- Image slider used for script -->
+
+    
+<!-- Script used for hover effect seen in the page-->
+    <script>
+    $(document).ready(function() {
+    // Set initial width of project-preview to 0
+    TweenMax.set(".project-preview", { width: 0 });
+
+    var tl = new TimelineLite();
+
+    // Mouseover event to expand the project-preview
+    $(document)
+        .on("mouseover", ".Hover_Text", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 1, {
+                width: "790px",
+                ease: Expo.easeInOut
+            });
+        })
+        // Mouseout event to collapse the project-preview
+        .on("mouseout", ".Hover_Text", function(evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 0.5, {
+                width: 0,
+                ease: Expo.easeInOut
+            });
+        });
+
+    // Hover event to change background image for navigation-link-1
+    $(".navigation-link-1").hover(function() {
+        $(".project-preview").css({ "background-image": "url(Images/Recipeee.png)" });
+    });
+
+    // Hover event to change background image for navigation-link-2
+    $(".navigation-link-2").hover(function() {
+        $(".project-preview").css({ "background-image": "url(Images/HTML_PAGE.png)" });
+    });
+
+    // Hover event to change background image for navigation-link-3
+    $(".navigation-link-3").hover(function() {
+        $(".project-preview").css({ "background-image": "url(Images/StudyPlan.png)" });
+    });
+
+    // Hover event to change background image for navigation-link-4
+    $(".navigation-link-4").hover(function() {
+        $(".project-preview").css({ "background-image": "url(Images/VIDEO.png)" });
+    });
+
+    // Hover event to change background image for navigation-link-5
+    $(".navigation-link-5").hover(function() {
+        $(".project-preview").css({ "background-image": "url(Images/Calculator.png)" });
+    });
+
+    // Hover event to change background image for navigation-link-6
+    $(".navigation-link-6").hover(function() {
+        $(".project-preview").css({ "background-image": "url(Images/Audio.png)" });
+    });
+
+    // Scroll event to adjust the height of the Image_Slider based on scroll position
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop(),
+            dh = $(document).height(),
+            wh = $(window).height();
+        scrollPercent = (scroll / (dh - wh)) * 100;
+        $(".Image_Slider").css("height", scrollPercent + "%");
+    });
+});
+
+    </script>
+  </body>
+</html>

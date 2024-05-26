@@ -1,0 +1,779 @@
+
+/* Resetting default margin and padding, setting background and text color, and defining font-family */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #161616;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Styling for the navigation bar */
+.navbar i {
+  margin-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  width: 95vw;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  z-index: 1000;
+}
+
+.navbar span {
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  width: 50px;
+  background: linear-gradient(90deg , transparent , #fff);
+  animation: animate 5s infinite linear;
+}
+
+@keyframes animate {
+  0% {
+    left: 0;
+    transform: translate(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translate(0%);
+  }
+}
+
+/* Styling for the logo */
+.logo a {
+  text-transform: capitalize;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: w; /* This seems like a typo, check if it's correct */
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Styling for the menu */
+.menu li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.menu a {
+  position: relative;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+.menu a:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  gap: 5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+/* Styling for the button */
+.btn {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Styling for the content */
+.content {
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-bottom: 200px;
+  color: #fff;
+  position: absolute;
+  font-family: 'Lato', 'sans-serif';
+}
+
+.content h1 {
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: auto;
+  letter-spacing: 2px;
+  max-height: 110px;
+}
+
+.content p {
+  margin-left: 25px;
+  font-size: 23px;
+  max-width: 800px;
+  letter-spacing: 1px;
+}
+
+/* Styling for spans within the content */
+.Header_2 span {
+  color: #ff7200;
+  font-size: 65px;
+  border-bottom: 1px solid #888;
+}
+
+.content img {
+  width: auto;
+  height: 800px;
+  left: 950px;
+  position: absolute;
+  margin-bottom: 400px;
+  border-radius: 10px;
+}
+
+/* Styling for the Cycling element */
+.Cycling {
+  box-sizing: content-box;
+  height: 80px;
+  display: flex;
+  border-radius: 8px;
+  width: 60%;
+  margin-top: 150px;
+}
+
+.words{
+  overflow: hidden;
+  
+}
+
+.Cycling span{
+  display: block;
+  height: 100%;
+  color: #ff7200;
+  animation: spin_words 6s infinite;
+  box-sizing: border-box;
+  font-family: 'Lato', 'sans-serif';
+  font-size: 60px;
+  font-weight: 500;
+}
+@keyframes spin_words{
+  10%{
+      transform: translateY(-112%);
+  }
+  25%{
+      transform: translateY(-100%);
+  }
+  35%{
+      transform: translateY(-212%);
+ 
+  }
+  50%{
+    transform: translateY(-200%);
+}
+
+}
+
+.contentt button{
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+  margin: auto;
+  margin-left: 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 3px solid #ff7200;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position:relative;
+  overflow: hidden;
+  font-family: 'Lato', 'sans-serif';
+}
+/* utilizes button element for stylization of the webpage*/
+
+.contentt span{
+  background: #ff7200;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.contentt button:hover span{ 
+  width: 100%;
+}
+/*When hovering over the button it shows a sliding effect */
+
+.contentt button:hover{ 
+  border: none;
+}
+
+/* Styling for buttons within the Hover_Buttn class */
+.Hover_Buttn .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin-top: 40px;
+  margin-left: 10px;
+  overflow: hidden;
+  background: #333;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Styling for button hover effect */
+.Hover_Buttn .button:hover {
+  width: 200px;
+}
+
+/* Styling for button icon */
+.Hover_Buttn .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+/* Styling for button icon element */
+.Hover_Buttn .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+/* Styling for button icon hover effect */
+.Hover_Buttn .button:hover .icon i {
+  color: #fff;
+}
+
+/* Styling for button text */
+.Hover_Buttn .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+/* Styling for button text color */
+.Hover_Buttn .button:nth-child(1) span,
+.Hover_Buttn .button:nth-child(2) span,
+.Hover_Buttn .button:nth-child(3) span,
+.Hover_Buttn .button:nth-child(4) span,
+.Hover_Buttn .button:nth-child(5) span {
+  color: #fff;
+}
+
+/* Styling for link within Hover_Buttn */
+.Hover_Buttn a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Progress bar custom property */
+@property --progress-value {
+  syntax: '<integer>';
+  inherits: false;
+  initial-value: 0;
+}
+
+/* Keyframes for HTML progress bar */
+@keyframes html-progress {
+  to {
+    --progress-value: 90;
+  }
+}
+
+/* Keyframes for CSS progress bar */
+@keyframes css-progress {
+  to {
+    --progress-value: 85;
+  }
+}
+
+/* Keyframes for JavaScript progress bar */
+@keyframes js-progress {
+  to {
+    --progress-value: 70;
+  }
+}
+
+/* Keyframes for Figma progress bar */
+@keyframes Figma-progress {
+  to {
+    --progress-value: 80;
+  }
+}
+
+/* Keyframes for Photoshop progress bar */
+@keyframes Photoshop-progress {
+  to {
+    --progress-value: 75;
+  }
+}
+
+/* Keyframes for Photography progress bar */
+@keyframes Photography-progress {
+  to {
+    --progress-value: 95;
+  }
+}
+
+.Stat-bar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin: 0px 60px;
+  /* to center the percentage value */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Lato', 'sans-serif';
+
+}
+
+/* Styling for pseudo-elements of Stat-bar */
+.Stat-bar::before {
+  counter-reset: percentage var(--progress-value);
+  content: counter(percentage) '%';
+}
+
+/* Styling for HTML progress bar */
+.html {
+  background: 
+    radial-gradient(closest-side, #161616 79%, transparent 80% 100%),
+    conic-gradient(#ff7200 calc(var(--progress-value) * 1%), #d76101 0);
+  animation: html-progress 2s 1 forwards;
+}
+
+/* Animation for HTML progress bar */
+.html::before {
+  animation: html-progress 2s 1 forwards;
+}
+
+/* Styling for CSS progress bar */
+.css {
+  background: 
+    radial-gradient(closest-side, #161616 79%, transparent 80% 100%, white 0),
+    conic-gradient(#1DA1F2 calc(var(--progress-value) * 1%), #1988cd 0);
+  animation: css-progress 2s 1 forwards;
+}
+
+/* Animation for CSS progress bar */
+.css::before {
+  animation: css-progress 2s 1 forwards;
+}
+
+/* Styling for JavaScript progress bar */
+.js {
+  background: 
+    radial-gradient(closest-side, #161616 79%, transparent 80% 100%, white 0),
+    conic-gradient(#FCCF00 calc(var(--progress-value) * 1%), #dfb600 0);
+  animation: js-progress 2s 1 forwards;
+}
+
+/* Animation for JavaScript progress bar */
+.js::before {
+  animation: js-progress 2s 1 forwards;
+}
+
+/* Styling for Figma progress bar */
+.Figma {
+  background: 
+    radial-gradient(closest-side, #161616 79%, transparent 80% 100%),
+    conic-gradient(#00af00 calc(var(--progress-value) * 1%), #006400 0);
+  animation: Figma-progress 2s 1 forwards;
+}
+
+/* Animation for Figma progress bar */
+.Figma::before {
+  animation: Figma-progress 2s 1 forwards;
+}
+
+/* Styling for Photoshop progress bar */
+.Photoshop {
+  background: 
+    radial-gradient(closest-side, #161616 79%, transparent 80% 100%, white 0),
+    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+  animation: Photoshop-progress 2s 1 forwards;
+}
+
+/* Animation for Photoshop progress bar */
+.Photoshop::before {
+  animation: Photoshop-progress 2s 1 forwards;
+}
+
+/* Styling for Photography progress bar */
+.Photography {
+  background: 
+    radial-gradient(closest-side, #161616 79%, transparent 80% 100%, white 0),
+    conic-gradient(#fb0000 calc(var(--progress-value) * 1%), #b60000 0);
+  animation: Photography-progress 2s 1 forwards;
+}
+
+/* Animation for Photography progress bar */
+.Photography::before {
+  animation: Photography-progress 2s 1 forwards;
+}
+
+h2 {
+  text-align: center;
+}
+
+progress {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+#class1  {
+  height: 100vh;
+ 
+}
+
+#class2  {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 2000px;
+  height: 50vh;
+  background: #171717;
+
+}
+#Specialty  {
+  height: 60vh;
+  background: #171717;
+  margin: auto;
+ 
+}
+
+.Heading h1{
+  font-family: 'Lato', sans-serif;
+  font-size: 4em;
+  position: absolute;
+  top: 1550px;
+  left: 805px;
+  text-shadow: 5px 0px 0px #888;
+  
+}
+
+
+/* Certificates container*/
+.wrapperss {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Photo_Container {
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 80px;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin: 0 15px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  background: #223;
+  color: white;
+  border-radius: 30%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  font-size: 20px;
+  font-family: 'Lato', 'sans-serif';
+}
+
+.card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+.description h4 {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  font-size: 19px;
+  font-family: 'Lato', 'sans-serif';
+ 
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 600px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url('About_Images/HTML_SoloLearn.jpg');
+}
+.card[for="c2"] {
+  background-image: url('About_Images/Java_SoloLearn.jpg');
+}
+.card[for="c3"] {
+  background-image: url('About_Images/CSS_SoloLearn.jpg');
+}
+.card[for="c4"] {
+  background-image: url('About_Images/Python_SoloLearn.png');
+}
+
+
+.header_cert{ 
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Lato', 'sans-serif';
+  text-shadow: 5px 0px 0px #888;
+  line-height: 1px;
+}
+
+.header_social { 
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  padding-top: 100px;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Lato', 'sans-serif';
+  text-shadow: 5px 0px 0px #888;
+
+  line-height: 1px;
+}
+
+
+
+footer{
+  background-color: #141414;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  
+}
+
+.Footer h3{
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+
+}
+
+
+/* Styling for .Rev container */
+.Rev {
+  padding: 15px 9%;
+  padding-bottom: 100px;
+}
+
+/* Styling for headings within .Rev */
+.Rev .headings {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 4em;
+  text-shadow: 5px 0px 0px #888;
+}
+
+/* Styling for .box-containers within .Rev */
+.Rev .box-containers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1.3rem));
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Styling for .boxs within .box-containers in .Rev */
+.Rev .box-containers .boxs {
+  box-shadow: 10px 5px 0px #1b1b1e;
+  border-radius: 5px;
+  background: #232528;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Styling for images within .boxs in .box-containers of .Rev */
+.Rev .box-containers .boxs img {
+  height: 150px;
+  width: auto;
+}
+
+/* Styling for headings within .boxs in .box-containers of .Rev */
+.Rev .box-containers .boxs h3 {
+  color: #fff;
+  font-size: 30px;
+  padding: 5px 0;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 3px 0px 0px #888;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .content img {
+    height: 600px;
+    left: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .menu {
+    gap: 2rem;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+
+  .content p {
+    font-size: 20px;
+  }
+
+  .content img {
+    height: 500px;
+    left: 60%;
+  }
+
+  .wrapper span {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .content {
+    margin: 120px 20px 100px 20px;
+    position: relative;
+  }
+
+  .content h1 {
+    font-size: 35px;
+    padding-left: 0;
+  }
+
+  .content p {
+    margin-left: 0;
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .content img {
+    height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .wrapper span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .content img {
+    height: 300px;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .wrapper span {
+    font-size: 30px;
+  }
+}
