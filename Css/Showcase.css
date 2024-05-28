@@ -110,6 +110,7 @@ h1{
   text-shadow: 5px 5px 0px rgba(255, 255, 255, 0.4);
 }
 
+/* Determines the size of the image in the slider*/
 .Image_Slider {
   position: fixed;
   top: 0;
@@ -118,7 +119,7 @@ h1{
   width: 1px;
   z-index: 1;
 }
-
+/*Position of the list */
 .navigation-wrapper ul {
   margin-top: 100px;
   margin-left: 100px;
@@ -132,7 +133,7 @@ h1{
   user-select: none;
   margin: 120px 0;
 }
-
+/* Styling for the navigation wrapper*/
 .navigation-wrapper a {
   font-family: "Cosi Azure";
   font-size: 100px;
@@ -144,7 +145,7 @@ span {
   position: relative;
   display: block;
 }
-
+/* Allows the images to appear when hovered*/
 .Hover_Text span:before {
   width: 0;
   color: #ffffff;
@@ -157,7 +158,7 @@ span {
 .Hover_Text span:hover:before {
   width: 100%;
 }
-
+/* Deter,ines the size of the image when it slides out*/
 .project-preview-wrapper {
   width: 100%;
   height: 100vh;
@@ -176,7 +177,7 @@ span {
   overflow: hidden;
   border-radius: 10px;
 }
-
+/* Media querie */
 @media (max-width: 900px) {
   .progressbar,
   .project-preview-wrapper {
@@ -187,3 +188,4 @@ span {
     font-size: 24px;
   } 
 }
+
