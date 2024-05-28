@@ -149,7 +149,7 @@ a:hover:after {
   border-radius: 10px;
 }
 
-/* Styling for the Cycling element */
+/* Styling for the rotating words */
 .Cycling {
   box-sizing: content-box;
   height: 80px;
@@ -191,6 +191,7 @@ a:hover:after {
 
 }
 
+/* Styling for the learn more button*/
 .contentt button{
   width: 200px;
   padding: 10px 0;
@@ -449,11 +450,12 @@ progress {
   height: 0;
 }
 
+/* Section class for the about page */
 #class1  {
   height: 100vh;
  
 }
-
+/* Section class to separate different features in about page*/
 #class2  {
   margin: auto;
   display: flex;
@@ -465,6 +467,7 @@ progress {
   background: #171717;
 
 }
+/* Section class for Specialty section*/
 #Specialty  {
   height: 60vh;
   background: #171717;
@@ -472,6 +475,7 @@ progress {
  
 }
 
+/* heading for skills section */
 .Heading h1{
   font-family: 'Lato', sans-serif;
   font-size: 4em;
@@ -491,14 +495,14 @@ progress {
   align-items: center;
   justify-content: center;
 }
-
+/* styling for the image container*/
 .Photo_Container {
   height: 400px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
 }
-
+/* styling for the image container*/
 .card {
   width: 80px;
   border-radius: .75rem;
@@ -518,7 +522,7 @@ progress {
   display: flex;
   flex-wrap: nowrap;
 }
-
+/* styling for the image container icon*/
 .card > .row > .icon {
   background: #223;
   color: white;
@@ -531,7 +535,7 @@ progress {
   font-size: 20px;
   font-family: 'Lato', 'sans-serif';
 }
-
+/* styling for the image container description*/
 .card > .row > .description {
   display: flex;
   justify-content: center;
@@ -544,7 +548,7 @@ progress {
   transition-delay: .3s;
   transition: all .3s ease;
 }
-
+/* styling for the image container*/
 .description h4 {
   text-transform: uppercase;
   color: #000;
@@ -553,20 +557,20 @@ progress {
   font-family: 'Lato', 'sans-serif';
  
 }
-
+/* Creates the effect when clicked*/
 input {
   display: none;
 }
-
+/* Creates the effect when clicked*/
 input:checked + label {
   width: 600px;
 }
-
+/* Creates the effect when clicked*/
 input:checked + label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
-
+/* Containers for the images*/
 .card[for="c1"] {
   background-image: url('About_Images/HTML_SoloLearn.jpg');
 }
@@ -580,7 +584,7 @@ input:checked + label .description {
   background-image: url('About_Images/Python_SoloLearn.png');
 }
 
-
+/* Header for the certificate section*/
 .header_cert{ 
   margin: auto;
   text-align: center;
@@ -592,7 +596,7 @@ input:checked + label .description {
   text-shadow: 5px 0px 0px #888;
   line-height: 1px;
 }
-
+/* Header for the social media section*/
 .header_social { 
   margin: auto;
   text-align: center;
@@ -608,7 +612,7 @@ input:checked + label .description {
 }
 
 
-
+/*Footer styling */
 footer{
   background-color: #141414;
   justify-content: space-between;
