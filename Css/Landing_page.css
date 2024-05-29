@@ -28,10 +28,10 @@ i {
     display: flex; /* Flexbox layout */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space items out */
-    padding: 1rem 3rem; /* Padding around navbar */
+    padding: 28px 3rem; /* Padding around navbar */
     position: fixed; /* Fixed position */
     top: 0; /* Position at top */
-    width: 95vw; /* Set width */
+    width: 100vw; /* Set width */
     border-bottom: 1px solid rgba(255, 255, 255, .1); /* Bottom border */
     z-index: 1000; /* Set stacking order */
   }
