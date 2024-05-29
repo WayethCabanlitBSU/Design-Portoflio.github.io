@@ -28,7 +28,7 @@ i {
     display: flex; /* Flexbox layout */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space items out */
-    padding: 28px 3rem; /* Padding around navbar */
+    padding: 25px 3rem; /* Padding around navbar */
     position: fixed; /* Fixed position */
     top: 0; /* Position at top */
     width: 100vw; /* Set width */
