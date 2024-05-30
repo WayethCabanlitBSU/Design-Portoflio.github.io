@@ -6,11 +6,11 @@ Theme Chosen: Portfolio
 Programming Languages:
 HTML5,
 CSS3,
-JavaScript,
+JavaScript
 
 Library & Plug-ins:
 GSAP Scrolltrigger,
 Lenis,
 Jquery,
 FontAwesome,
-Google Fonts,
+Google Fonts
